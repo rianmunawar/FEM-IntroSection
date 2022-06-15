@@ -1,0 +1,122 @@
+/* Font Google */
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contoh {
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  font-family: 18px;
+  overflow-x: hidden;
+}
+
+.logo {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #2e2e2e;
+}
+
+.nav-link.active {
+  color: #1e1e1e !important;
+  font-weight: 700;
+}
+
+.btn.btn-outline-dark:hover {
+  color: #ececec;
+}
+
+.dropdown-item {
+  color: #2e2e2e;
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero */
+section.hero {
+  height: 90vh !important;
+  padding: 30px 0;
+}
+
+.hero-text {
+  padding: 30px;
+}
+
+.hero-description {
+  width: 450px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 550px;
+  background-image: url("../images/image-hero-desktop.png");
+  background-size: contain;
+  background-position: 100px 0;
+  background-repeat: no-repeat;
+}
+
+/* attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Mobile Screene */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .navbar {
+    padding-right: 20px;
+  }
+
+  .hero-text {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .hero-title {
+    font-size: 2.3em;
+    padding-top: 40px;
+  }
+
+  .hero-description {
+    font-size: 1.4em;
+    width: 370px;
+  }
+
+  .client {
+    width: 100%;
+  }
+
+  .col-3 img {
+    width: 70px;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 256px;
+    background-image: url("../images/image-hero-mobile.png");
+    background-size: contain;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+  }
+}

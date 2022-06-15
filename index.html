@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font from Google -->
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./assets/style/style.css" />
+  </head>
+  <body>
+    <!-- header navigation -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light fixed-top"
+        style="background-color: #fff"
+      >
+        <a href="#" class="navbar-brand logo ms-4">snap</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse me-4" id="mobile-nav">
+          <ul class="navbar-nav row ms-1" style="width: 100%">
+            <div class="col-lg-9 d-flex flex-lg-row">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Features
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><img
+                        src="./assets/images/icon-todo.svg"
+                        alt="todo icon"
+                        class="me-2"
+                      />
+                      Todo List</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><img
+                        src="./assets/images/icon-calendar.svg"
+                        alt="calender icon"
+                        class="me-2"
+                      />
+                      Calendar</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><img
+                        src="./assets/images/icon-reminders.svg"
+                        alt="reminder icon"
+                        class="me-3"
+                      />Reminders</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><img
+                        src="./assets/images/icon-planning.svg"
+                        alt="Planning Icon"
+                        class="me-2"
+                      />
+                      Planning</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Company
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#"> History</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Our Team</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Blog</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+              </li>
+            </div>
+            <div class="col-lg-3 d-flex flex-lg-row justify-content-between">
+              <li class="nav-item">
+                <a href="#" class="nav-link btn btn-link" style="width: 150px"
+                  >Login</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link btn btn-outline-dark"
+                  style="width: 150px"
+                  >Register</a
+                >
+              </li>
+            </div>
+          </ul>
+        </div>
+      </nav>
+      <!-- offcanvas -->
+      <aside>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+          style="width: 60%"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close position-absolute end-0 translate-middle"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              style="top: 5%"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ml-auto row" style="width: 100%">
+              <div class="col-lg-9 d-flex flex-lg-row flex-column">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Features
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><img
+                          src="./assets/images/icon-todo.svg"
+                          alt="todo icon"
+                          class="me-2"
+                        />
+                        Todo List</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><img
+                          src="./assets/images/icon-calendar.svg"
+                          alt="calender icon"
+                          class="me-2"
+                        />
+                        Calendar</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><img
+                          src="./assets/images/icon-reminders.svg"
+                          alt="reminder icon"
+                          class="me-3"
+                        />Reminders</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><img
+                          src="./assets/images/icon-planning.svg"
+                          alt="Planning Icon"
+                          class="me-2"
+                        />
+                        Planning</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Company
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#"> History</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"> Our Team</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Blog</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Careers</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">About</a>
+                </li>
+              </div>
+              <div
+                class="col-lg-3 d-flex flex-lg-row flex-column justify-content-start"
+              >
+                <li class="nav-item">
+                  <a href="#" class="nav-link btn btn-link" style="width: 150px"
+                    >Login</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="nav-link btn btn-outline-dark"
+                    style="width: 150px"
+                    >Register</a
+                  >
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </header>
+
+    <!-- main content -->
+    <main class="mt-5">
+      <section class="hero mb-5">
+        <div class="container">
+          <div class="row align-items-center flex-lg-row flex-column-reverse">
+            <div class="col-12 col-md-6 hero-text">
+              <h1 class="hero-title fw-bold mb-5">Make remote work</h1>
+              <p class="hero-description mb-5">
+                Get your team in sync, no matter your location. Streamline your
+                process, create team rituals, and watch productivity soar.
+              </p>
+              <button class="btn btn-dark mb-5">Learn More</button>
+              <div class="client position-relative mb-5" style="top: 85%">
+                <div class="row">
+                  <div class="col-3">
+                    <img
+                      src="./assets/images/client-databiz.svg"
+                      alt="Databiz Logo"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <img
+                      src="./assets/images/client-audiophile.svg"
+                      alt="Audiophile Logo"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <img
+                      src="./assets/images/client-meet.svg"
+                      alt="Meet Logo"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <img
+                      src="./assets/images/client-maker.svg"
+                      alt="Maker Logo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 p-2">
+              <div class="hero-image"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <div style="text-align: center">
+      <img
+        src="./assets/images/image-hero-mobile.png"
+        alt=""
+        srcset=""
+        class="contoh"
+        width="40%"
+      />
+    </div> -->
+
+    <!-- Footer -->
+
+    <!-- Bootstrap CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
