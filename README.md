@@ -28,10 +28,14 @@ Users should be able to:
 - View the optimal layout for the content depending on their device's screen size
 - See hover states for all interactive elements on the page
 
+### Screenshot
+
+[Screen shot of the solution](./design/active-states.jpg)
+
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My code solution](https://github.com/rianmunawar/FEM-IntroSection)
+- Live Site URL: [Live site preview](https://femintrosection.netlify.app/)
 
 ## My process
 
